@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/JimmyLv/parabol-webpack-autodll-plugin#readme",
   "dependencies": {
+    "simple-git-hooks": "^2.7.0",
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1"
   },
@@ -32,8 +33,16 @@
     "@sucrase/jest-plugin": "^2.2.0",
     "bluebird": "^3.7.2",
     "jest": "^27.3.1",
+    "lint-staged": "^12.0.2",
     "memory-fs": "^0.5.0",
+    "prettier": "^2.4.1",
     "sucrase": "^3.20.3",
     "webpack-defaults": "^4.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
   }
 }
