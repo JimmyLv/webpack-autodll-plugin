@@ -4,13 +4,25 @@
  */
 
 class WebpackAutodllPlugin {
+  constructor(options) {
+    this.options = options
+  }
   apply(compiler) {
-    compiler.hooks.done.tap('WebpackAutodllPlugin', (
-      stats /* stats is passed as an argument when done hook is tapped.  */
-    ) => {
-      console.log('Hello World!');
-    });
+    compiler.hooks.emit.tapAsync('WebpackAutodllPlugin', (compilation, callback) => {
+      console.log('options', this.options)
+
+      console.log('compilation.assets', compilation.assets)
+      // console.log("compilation.options", compilation.options);
+
+      callback()
+    })
+    compiler.hooks.done.tap(
+      'WebpackAutodllPlugin',
+      (stats /* stats is passed as an argument when done hook is tapped.  */) => {
+        console.log('Hello World!')
+      },
+    )
   }
 }
 
-module.exports = WebpackAutodllPlugin;
+module.exports = WebpackAutodllPlugin

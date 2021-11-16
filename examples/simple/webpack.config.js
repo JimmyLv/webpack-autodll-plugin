@@ -1,5 +1,5 @@
-const path = require('path');
-const WebpackAutodllPlugin = require('../../src/index.js');
+const path = require('path')
+const WebpackAutodllPlugin = require('../../src/index.js')
 
 module.exports = {
   entry: './src/index.js',
@@ -9,6 +9,11 @@ module.exports = {
     filename: '[name].chunk.js',
   },
   plugins: [
-    new WebpackAutodllPlugin()
-  ]
-};
+    new WebpackAutodllPlugin({
+      vendors: [],
+      package: 'package.json',
+      ignore: [],
+      lockfile: 'yarn.lock',
+    }),
+  ],
+}
