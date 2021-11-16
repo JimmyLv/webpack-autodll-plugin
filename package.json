@@ -1,0 +1,36 @@
+{
+  "name": "parabol-webpack-autodll-plugin",
+  "version": "1.0.0",
+  "description": "AutoDLL Webpack Plugin for handling DLL caching outside of webpack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimmyLv/parabol-webpack-autodll-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "dll",
+    "cache",
+    "optimize",
+    "parabol"
+  ],
+  "author": "JimmyLv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JimmyLv/parabol-webpack-autodll-plugin/issues"
+  },
+  "homepage": "https://github.com/JimmyLv/parabol-webpack-autodll-plugin#readme",
+  "dependencies": {
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "bluebird": "^3.7.2",
+    "jest": "^27.3.1",
+    "webpack-defaults": "^4.0.0"
+  }
+}
