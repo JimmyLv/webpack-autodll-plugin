@@ -76,6 +76,10 @@
 
 ## About The Project
 
+> AutoDLL Webpack Plugin for handling DLL caching outside of webpack.
+
+You can use this Webpack plugin that includes DLL caching, to make your webpack builds as fast as HIGHLY optimized, and automatically based on your lockfile, e.g. `yarn.lock`
+
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
