@@ -18,6 +18,7 @@ module.exports = {
       package: 'package.json',
       ignore: [],
       lockfile: 'yarn.lock',
+      // cacheDir https://github.com/clinyong/dll-link-webpack-plugin/blob/master/src/index.ts#L10
     }),
   ],
 }

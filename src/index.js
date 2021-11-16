@@ -4,10 +4,24 @@
  */
 
 class WebpackAutodllPlugin {
+  hasCompile
+
   constructor(options) {
     this.options = options
+    this.hasCompile = false
+  }
+  check = async (compilation, cb) => {
+    if (!this.hasCompile) {
+      this.hasCompile = true
+      /* if (this.cacheController.shouldUpdateCache()) {
+        assets = await this.bundleController.webpackBuild();
+      } */
+    }
+    return cb()
   }
   apply(compiler) {
+    compiler.hooks.beforeCompile.tapAsync('WebpackAutodllPlugin', this.check)
+
     compiler.hooks.emit.tapAsync('WebpackAutodllPlugin', (compilation, callback) => {
       console.log('options', this.options)
 
