@@ -3,6 +3,7 @@ const WebpackAutodllPlugin = require('../../src/index.js');
 
 module.exports = {
   entry: './src/index.js',
+  mode: 'production',
   output: {
     path: path.join(__dirname, 'example_dist'),
     filename: '[name].chunk.js',

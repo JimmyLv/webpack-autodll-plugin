@@ -29,8 +29,11 @@
     "webpack-cli": "^4.9.1"
   },
   "devDependencies": {
+    "@sucrase/jest-plugin": "^2.2.0",
     "bluebird": "^3.7.2",
     "jest": "^27.3.1",
+    "memory-fs": "^0.5.0",
+    "sucrase": "^3.20.3",
     "webpack-defaults": "^4.0.0"
   }
 }
