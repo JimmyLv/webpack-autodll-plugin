@@ -9,6 +9,10 @@ module.exports = {
     filename: '[name].chunk.js',
   },
   plugins: [
+    // TODO: need to simplify inside AutodllPlugin, ref: https://github.com/clinyong/dll-link-webpack-plugin/blob/9532c06827/src/BundleController.ts
+    // new webpack.DllReferencePlugin({
+    //   manifest: vendors
+    // }),
     new WebpackAutodllPlugin({
       vendors: ['react', 'react-dom', 'core-js'],
       package: 'package.json',

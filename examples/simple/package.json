@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "private": true,
   "scripts": {
-    "start": "webpack serve",
+    "start": "../../node_modules/.bin/webpack serve",
     "build": "webpack"
   },
   "keywords": [],
