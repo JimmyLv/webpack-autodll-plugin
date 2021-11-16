@@ -1,0 +1,19 @@
+{
+  "name": "webpack-autodll-plugin-simple-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "JimmyLv",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}

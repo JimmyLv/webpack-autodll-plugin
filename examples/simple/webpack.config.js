@@ -10,7 +10,7 @@ module.exports = {
   },
   plugins: [
     new WebpackAutodllPlugin({
-      vendors: [],
+      vendors: ['react', 'react-dom', 'core-js'],
       package: 'package.json',
       ignore: [],
       lockfile: 'yarn.lock',
