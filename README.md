@@ -196,7 +196,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-JimmyLv - [@Jimmy_JingLv](https://twitter.com/Jimmy_JingLv) - lv460051518@gmail.com
+JimmyLv - [@Jimmy_JingLv](https://twitter.com/Jimmy_JingLv) - jimmy.jinglv@gmail.com
 
 Project Link: [https://github.com/JimmyLv/webpack-autodll-plugin](https://github.com/JimmyLv/webpack-autodll-plugin)
 
