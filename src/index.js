@@ -3,19 +3,27 @@
  * https://webpack.js.org/contribute/writing-a-plugin/#basic-plugin-architecture
  */
 
+const CacheController = require('./CacheController')
+
 class WebpackAutodllPlugin {
   hasCompile
+  cacheController
 
   constructor(options) {
     this.options = options
     this.hasCompile = false
+    this.cacheController = new CacheController({
+      // configIndex,
+      // entry,
+      // manifestFile: path.join(cacheDir, MANIFEST_FILE)
+    })
   }
   check = async (compilation, cb) => {
     if (!this.hasCompile) {
       this.hasCompile = true
-      /* if (this.cacheController.shouldUpdateCache()) {
-        assets = await this.bundleController.webpackBuild();
-      } */
+      if (this.cacheController.shouldUpdateCache()) {
+        // assets = await this.bundleController.webpackBuild();
+      }
     }
     return cb()
   }
