@@ -1,5 +1,5 @@
 import esmModule from './static-esm-module'
-
+import './react-module'
 const getLazyModule = async () => (await import('./lazy-module')).default
 
 setTimeout(() => {
