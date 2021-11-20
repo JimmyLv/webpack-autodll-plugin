@@ -1,5 +1,5 @@
 const path = require('path')
-// const WebpackAutodllPlugin = require('../../src/index.js')
+const WebpackAutodllPlugin = require('../../src/index.js')
 
 module.exports = {
   entry: './src/index.js',
@@ -22,12 +22,13 @@ module.exports = {
     // new webpack.DllReferencePlugin({
     //   manifest: vendors
     // }),
-    /*new WebpackAutodllPlugin({
+    new WebpackAutodllPlugin({
+      config: require('./webpack.dll.config'),
       vendors: ['react', 'react-dom', 'core-js'],
       package: 'package.json',
       ignore: [],
       lockfile: 'yarn.lock',
       // cacheDir https://github.com/clinyong/dll-link-webpack-plugin/blob/master/src/index.ts#L10
-    }),*/
+    }),
   ],
 }

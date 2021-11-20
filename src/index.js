@@ -4,6 +4,7 @@
  */
 
 const CacheController = require('./CacheController')
+const BundleController = require('./BundleController')
 
 class WebpackAutodllPlugin {
   hasCompile
@@ -17,12 +18,25 @@ class WebpackAutodllPlugin {
       // entry,
       // manifestFile: path.join(cacheDir, MANIFEST_FILE)
     })
+    this.bundleController = new BundleController({
+      webpackConfig: this.options.config,
+      // cacheConfig: {
+      //   cacheJSNames: this.cacheController.getCacheJSNames(),
+      //   cacheJSPath: this.cacheJSPath,
+      //   cacheJSONPath: this.cacheJSONPath
+      // },
+      // manifestNames
+    })
   }
   check = async (compilation, cb) => {
     if (!this.hasCompile) {
       this.hasCompile = true
       if (this.cacheController.shouldUpdateCache()) {
-        // assets = await this.bundleController.webpackBuild();
+        const assets = await this.bundleController.webpackBuild()
+        console.log({ assets })
+      } else {
+        console.log(`📘 Using cached DLL`)
+        // resolve()
       }
     }
     return cb()
