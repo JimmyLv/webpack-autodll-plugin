@@ -1,6 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
-const DLL_ROOT = path.join(__dirname, 'dev/dll')
+const DLL_ROOT = path.join(__dirname, '.atuodll-plugin')
 
 module.exports = {
   mode: 'development',
@@ -14,7 +14,11 @@ module.exports = {
     library: '[name]',
   },
   plugins: [
-    new webpack.DllPlugin({ name: '[name]', path: path.join(DLL_ROOT, '[name].json') }), // eslint-disable-line no-new
+    // TODO: replace with dll plugin inside WebpackAutodllPlugin
+    new webpack.DllPlugin({
+      name: '[name]',
+      path: path.join(DLL_ROOT, '[name].json'),
+    }),
   ],
   module: {
     rules: [

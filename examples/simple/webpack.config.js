@@ -18,10 +18,6 @@ module.exports = {
     ],
   },
   plugins: [
-    // TODO: need to simplify inside AutodllPlugin, ref: https://github.com/clinyong/dll-link-webpack-plugin/blob/9532c06827/src/BundleController.ts
-    // new webpack.DllReferencePlugin({
-    //   manifest: vendors
-    // }),
     new WebpackAutodllPlugin({
       config: require('./webpack.dll.config'),
       vendors: ['react', 'react-dom', 'core-js'],

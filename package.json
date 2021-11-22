@@ -4,7 +4,7 @@
   "description": "AutoDLL Webpack Plugin for handling DLL caching outside of webpack.",
   "main": "index.js",
   "scripts": {
-    "pretest": "rm -rf dev/dll",
+    "pretest": "rm -rf .atuodll-plugin",
     "test": "jest"
   },
   "repository": {

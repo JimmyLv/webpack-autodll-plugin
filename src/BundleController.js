@@ -1,28 +1,26 @@
+const path = require('path')
 const webpack = require('webpack')
+const { DLL_ROOT } = require('./constants/path')
 
 class BundleController {
   webpackConfig
+  dllReferencePlugin
   constructor(options) {
     this.webpackConfig = options.webpackConfig
+    this.dllReferencePlugin = new webpack.DllReferencePlugin({
+      manifest: path.join(DLL_ROOT, 'vendors.json'),
+    })
   }
 
   async webpackBuild() {
-    // fs.writeFileSync(CACHE_HASH, hash)
-    // TODO: update to use webpackBuild() automatically, ref: https://github.com/clinyong/dll-link-webpack-plugin/blob/master/src/BundleController.ts#L156
     return new Promise((resolve, reject) => {
       webpack(this.webpackConfig, (err, stats) => {
         if (err) {
           reject(err)
-        } else if (stats.hasErrors()) {
-          console.log('stats.hasErrors', stats.toJson().errors.join('\n'))
-          console.log('-----', stats.toJson().errors)
-          // reject(new Error(stats.toJson().errors.join('\n')))
         } else {
           console.log(`📘 DLL created`)
 
           const assets = stats.toJson().assets.map((asset) => asset.name)
-          // this.modifyGenerateFileModifyTime();
-          // this.updateOutputJSNames(assets);
           resolve(assets)
         }
       })
