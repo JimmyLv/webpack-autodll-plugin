@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "pretest": "rm -rf .atuodll-plugin",
-    "test": "jest"
+    "test": "jest",
+    "release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
     "webpack-dev-server": "^4.5.0"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "@sucrase/jest-plugin": "^2.2.0",
     "bluebird": "^3.7.2",
     "jest": "^27.3.1",
@@ -39,7 +42,9 @@
     "memory-fs": "^0.5.0",
     "prettier": "^2.4.1",
     "sucrase": "^3.20.3",
-    "webpack-defaults": "^4.0.0"
+    "webpack-defaults": "^4.0.0",
+    "semantic-release": "^17.4.2",
+    "semantic-release-gitmoji": "^1.3.4"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
