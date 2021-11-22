@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.0.0...v1.1.0) (2021-11-22)
+
+
+### Features
+
+* config vendors and replace with dll plugin inside WebpackAutodllPlugin ([e056455](https://github.com/JimmyLv/webpack-autodll-plugin/commit/e0564552f4b36577a3247cc0af1834b45f89c8bf))
+
+
+
+
+
+# [v1.1.0](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.0.0...v1.1.0) (2021-11-22)
+
 # 1.0.0 (2021-11-22)
 
 
