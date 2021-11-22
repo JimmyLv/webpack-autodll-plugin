@@ -2,11 +2,38 @@ const path = require('path')
 const webpack = require('webpack')
 const { DLL_ROOT } = require('./constants/path')
 
+const defaultModule = {
+  rules: [
+    { test: /\.flow$/, loader: 'ignore-loader' },
+    {
+      test: /\.mjs$/,
+      include: /node_modules/,
+      type: 'javascript/auto',
+    },
+  ],
+}
+
 class BundleController {
   webpackConfig
   dllReferencePlugin
   constructor(options) {
-    this.webpackConfig = options.webpackConfig
+    this.webpackConfig = {
+      entry: {
+        vendors: options.vendors,
+      },
+      output: {
+        filename: '[name].dll.js',
+        path: DLL_ROOT,
+        library: '[name]',
+      },
+      plugins: [
+        new webpack.DllPlugin({
+          name: '[name]',
+          path: path.join(DLL_ROOT, '[name].json'),
+        }),
+      ],
+      module: defaultModule,
+    }
     this.dllReferencePlugin = new webpack.DllReferencePlugin({
       manifest: path.join(DLL_ROOT, 'vendors.json'),
     })

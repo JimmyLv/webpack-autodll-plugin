@@ -19,7 +19,6 @@ module.exports = {
   },
   plugins: [
     new WebpackAutodllPlugin({
-      config: require('./webpack.dll.config'),
       vendors: ['react', 'react-dom', 'core-js'],
       package: 'package.json',
       ignore: [],

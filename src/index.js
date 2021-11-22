@@ -10,7 +10,7 @@ class WebpackAutodllPlugin {
     this.hasCompile = false
     this.cacheController = new CacheController()
     this.bundleController = new BundleController({
-      webpackConfig: this.options.config,
+      vendors: options.vendors,
     })
   }
   check = async (compilation, cb) => {
