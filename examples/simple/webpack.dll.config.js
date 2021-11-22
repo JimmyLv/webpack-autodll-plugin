@@ -5,7 +5,7 @@ const DLL_ROOT = path.join(__dirname, 'dev/dll')
 module.exports = {
   mode: 'development',
   entry: {
-    // TODO: replace with options from WebpackAutodllPlugin
+    // TODO: replace with options from WebpackAutodllPlugin directly?
     vendors: ['react', 'react-dom', 'core-js'],
   },
   output: {

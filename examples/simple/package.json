@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=development ../../node_modules/.bin/webpack serve",
+    "start": "NODE_ENV=development webpack serve",
+    "prebuild": "rm -rf example_dist",
     "build": "webpack"
   },
   "keywords": [],

@@ -2,7 +2,7 @@ const path = require('path')
 const WebpackAutodllPlugin = require('../../src/index.js')
 
 module.exports = {
-  entry: './src/index.js',
+  entry: path.join(__dirname, './src/index.js'),
   mode: process.env.NODE_ENV === 'development' ? 'development' : 'production',
   output: {
     path: path.join(__dirname, 'example_dist'),
