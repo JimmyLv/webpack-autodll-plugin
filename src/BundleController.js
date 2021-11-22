@@ -1,5 +1,3 @@
-import fs from 'fs'
-import { CACHE_HASH, DLL_ROOT } from './constants/path'
 const webpack = require('webpack')
 
 class BundleController {
