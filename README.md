@@ -106,7 +106,43 @@ You can use this Webpack plugin that includes DLL caching, to make your webpack 
 npm install npm@latest -g
 ```
 
-### Installation
+<!-- USAGE EXAMPLES -->
+
+## Webpack Usage
+
+```js
+const path = require('path')
+const WebpackAutodllPlugin = require('@parabol/webpack-autodll-plugin')
+
+module.exports = {
+  entry: './src/index.js',
+  plugins: [
+    new WebpackAutodllPlugin({
+      vendors: ['react', 'react-dom', 'core-js'],
+    }),
+  ],
+}
+```
+
+_For more examples, please refer to the [Documentation](https://github.com/ParabolInc/parabol/issues/4583)_
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+- [ ] the buildDll.js logic is moved into a separate package & turned into a webpack plugin
+- [ ] the package is open sourced under the parabolinc github and under the parabol in npm
+- [ ] instead of referencing the built dll output, the dev config references the dll config & the plugin builds it if the hash changes
+- [ ] see https://github.com/clinyong/dll-link-webpack-plugin for inspiration on the API
+- [ ] Suggested API: `({vendors: string[]} | {package: string, ignore?: string[]}) & {lockfile?: string}` but it's up to you!
+
+See the [open issues](https://github.com/JimmyLv/webpack-autodll-plugin/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Getting Start
 
 1.Clone the repo
 
@@ -132,38 +168,6 @@ webpack
 ```shell
 yarn test
 ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-```js
-const path = require("path");
-const WebpackAutodllPlugin = require("@parabol/webpack-autodll-plugin");
-
-module.exports = {
-  entry: "./src/index.js",
-  plugins: [new WebpackAutodllPlugin()],
-};
-```
-
-_For more examples, please refer to the [Documentation](https://github.com/ParabolInc/parabol/issues/4583)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] the buildDll.js logic is moved into a separate package & turned into a webpack plugin
-- [ ] the package is open sourced under the parabolinc github and under the parabol in npm
-- [ ] instead of referencing the built dll output, the dev config references the dll config & the plugin builds it if the hash changes
-- [ ] see https://github.com/clinyong/dll-link-webpack-plugin for inspiration on the API
-- [ ] Suggested API: `({vendors: string[]} | {package: string, ignore?: string[]}) & {lockfile?: string}` but it's up to you!
-
-See the [open issues](https://github.com/JimmyLv/webpack-autodll-plugin/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

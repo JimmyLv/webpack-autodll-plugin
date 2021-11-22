@@ -1,6 +1,6 @@
 {
   "name": "@parabol/webpack-autodll-plugin",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "AutoDLL Webpack Plugin for handling DLL caching outside of webpack.",
   "main": "index.js",
   "scripts": {
