@@ -8,7 +8,9 @@ class WebpackAutodllPlugin {
   constructor(options) {
     this.options = options
     this.hasCompile = false
-    this.cacheController = new CacheController()
+    this.cacheController = new CacheController({
+      lockfile: options.lockfile,
+    })
     this.bundleController = new BundleController({
       vendors: options.vendors,
     })

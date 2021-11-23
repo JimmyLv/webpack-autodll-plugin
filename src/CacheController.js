@@ -6,7 +6,10 @@ const { CACHE_HASH, PROJECT_ROOT, DLL_ROOT } = require('./constants/path')
 const path = require('path')
 
 class CacheController {
-  constructor(param) {}
+  lockfile
+  constructor(options) {
+    this.lockfile = options.lockfile || 'yarn.lock'
+  }
 
   shouldUpdateCache() {
     let cacheHash
@@ -15,7 +18,7 @@ class CacheController {
     } catch (e) {
       cacheHash = ''
     }
-    const lockfile = fs.readFileSync(path.join(PROJECT_ROOT, 'yarn.lock'), 'utf8')
+    const lockfile = fs.readFileSync(path.join(PROJECT_ROOT, this.lockfile), 'utf8')
 
     const hash = crypto.createHash('md5').update(lockfile).digest('hex')
 
