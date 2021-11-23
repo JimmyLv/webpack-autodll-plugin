@@ -4,5 +4,6 @@ node_modules
 *.log
 coverage
 **/dev/dll
+dist/
 
 examples/simple/example_dist

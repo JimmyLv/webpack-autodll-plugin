@@ -2,11 +2,19 @@
   "name": "@parabol/webpack-autodll-plugin",
   "version": "0.0.0-development",
   "description": "AutoDLL Webpack Plugin for handling DLL caching outside of webpack.",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "package.json",
+    "README.md",
+    "dist/",
+    "docs/",
+    "images/"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
+    "prepare": "sucrase ./src -d ./dist --transforms imports",
     "pretest": "rm -rf dev/dll",
     "test": "jest",
     "release": "semantic-release"
@@ -30,7 +38,6 @@
   },
   "homepage": "https://github.com/JimmyLv/webpack-autodll-plugin#readme",
   "dependencies": {
-    "simple-git-hooks": "^2.7.0",
     "webpack": "^5.64.1",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.5.0"
@@ -44,10 +51,11 @@
     "lint-staged": "^12.0.2",
     "memory-fs": "^0.5.0",
     "prettier": "^2.4.1",
-    "sucrase": "^3.20.3",
-    "webpack-defaults": "^4.0.0",
     "semantic-release": "^17.4.2",
-    "semantic-release-gitmoji": "^1.3.4"
+    "semantic-release-gitmoji": "^1.3.4",
+    "simple-git-hooks": "^2.7.0",
+    "sucrase": "^3.20.3",
+    "webpack-defaults": "^4.0.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
