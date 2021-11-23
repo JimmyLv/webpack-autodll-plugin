@@ -38,7 +38,7 @@
     <a href="https://github.com/JimmyLv/webpack-autodll-plugin"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/JimmyLv/webpack-autodll-plugin">View Demo</a>
+    <a href="https://github.com/JimmyLv/webpack-autodll-plugin/blob/master/examples/simple/webpack.config.js">View Demo</a>
     ·
     <a href="https://github.com/JimmyLv/webpack-autodll-plugin/issues">Report Bug</a>
     ·
@@ -132,10 +132,10 @@ _For more examples, please refer to the [Documentation](https://github.com/Parab
 
 ## Roadmap
 
-- [ ] the buildDll.js logic is moved into a separate package & turned into a webpack plugin
-- [ ] the package is open sourced under the parabolinc github and under the parabol in npm
-- [ ] instead of referencing the built dll output, the dev config references the dll config & the plugin builds it if the hash changes
-- [ ] see https://github.com/clinyong/dll-link-webpack-plugin for inspiration on the API
+- [x] the buildDll.js logic is moved into a separate package & turned into a webpack plugin
+- [x] the package is open sourced under the parabolinc github and under the parabol in npm
+- [x] instead of referencing the built dll output, the dev config references the dll config & the plugin builds it if the hash changes
+- [x] see https://github.com/clinyong/dll-link-webpack-plugin for inspiration on the API
 - [ ] Suggested API: `({vendors: string[]} | {package: string, ignore?: string[]}) & {lockfile?: string}` but it's up to you!
 
 See the [open issues](https://github.com/JimmyLv/webpack-autodll-plugin/issues) for a full list of proposed features (and known issues).
