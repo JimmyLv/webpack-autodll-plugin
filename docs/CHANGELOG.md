@@ -1,3 +1,16 @@
+# [1.2.0](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.1.0...v1.2.0) (2021-11-23)
+
+
+### Features
+
+* add cache option for lockfile, use `yarn.lock` by default ([a920c46](https://github.com/JimmyLv/webpack-autodll-plugin/commit/a920c46d362848dd56513305b6900f7279367242))
+
+
+
+
+
+# [v1.2.0](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.1.0...v1.2.0) (2021-11-23)
+
 # [1.1.0](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.0.0...v1.1.0) (2021-11-22)
 
 
