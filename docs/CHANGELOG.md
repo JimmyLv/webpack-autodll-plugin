@@ -1,3 +1,17 @@
+## [1.2.3](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.2...v1.2.3) (2021-11-23)
+
+
+### Bug Fixes
+
+* add context for dll-reference error ([45c5daa](https://github.com/JimmyLv/webpack-autodll-plugin/commit/45c5daa7dd88ebf2325267b4c0b845f4debaab1a))
+* update main file ([9d7177c](https://github.com/JimmyLv/webpack-autodll-plugin/commit/9d7177c82e151c99aace3b0ee42348a0919f4807))
+
+
+
+
+
+# [v1.2.3](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.2...v1.2.3) (2021-11-23)
+
 ## [1.2.2](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.1...v1.2.2) (2021-11-23)
 
 
