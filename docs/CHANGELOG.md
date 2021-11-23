@@ -1,3 +1,16 @@
+## [1.2.2](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.1...v1.2.2) (2021-11-23)
+
+
+### Bug Fixes
+
+* update the cacheDir to dev/dll ([c666c5b](https://github.com/JimmyLv/webpack-autodll-plugin/commit/c666c5b44befa048963b59591e3aecd7e02aa841))
+
+
+
+
+
+# [v1.2.2](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.1...v1.2.2) (2021-11-23)
+
 ## [1.2.1](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.0...v1.2.1) (2021-11-23)
 
 
