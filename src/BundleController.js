@@ -28,6 +28,7 @@ class BundleController {
       },
       plugins: [
         new webpack.DllPlugin({
+          context: __dirname,
           name: '[name]',
           path: path.join(DLL_ROOT, '[name].json'),
         }),
@@ -35,6 +36,7 @@ class BundleController {
       module: defaultModule,
     }
     this.dllReferencePlugin = new webpack.DllReferencePlugin({
+      context: __dirname,
       manifest: path.join(DLL_ROOT, 'vendors.json'),
     })
   }
