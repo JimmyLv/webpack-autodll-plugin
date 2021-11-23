@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "NODE_ENV=development webpack serve",
-    "prebuild": "rm -rf example_dist && rm -rf .atuodll-plugin",
+    "prebuild": "rm -rf example_dist && rm -rf dev/dll",
     "build": "webpack"
   },
   "keywords": [],

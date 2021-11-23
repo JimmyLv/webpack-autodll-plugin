@@ -7,7 +7,7 @@
     "access": "public"
   },
   "scripts": {
-    "pretest": "rm -rf .atuodll-plugin",
+    "pretest": "rm -rf dev/dll",
     "test": "jest",
     "release": "semantic-release"
   },

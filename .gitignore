@@ -3,6 +3,6 @@ node_modules
 
 *.log
 coverage
-**/.atuodll-plugin
+**/dev/dll
 
 examples/simple/example_dist
