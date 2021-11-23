@@ -1,3 +1,17 @@
+## [1.2.4](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.3...v1.2.4) (2021-11-23)
+
+
+### Bug Fixes
+
+* only publish dist as npm package ([9d3ffab](https://github.com/JimmyLv/webpack-autodll-plugin/commit/9d3ffabf9c1aa4293b9c17f617681693f34153bc))
+* use webpack serve static to serve vendors.dll.js ([521fd7b](https://github.com/JimmyLv/webpack-autodll-plugin/commit/521fd7b731f168ed420010d883d8ec72443c71a6))
+
+
+
+
+
+# [v1.2.4](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.3...v1.2.4) (2021-11-23)
+
 ## [1.2.3](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.2...v1.2.3) (2021-11-23)
 
 
