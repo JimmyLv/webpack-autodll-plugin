@@ -80,7 +80,9 @@
 
 You can use this Webpack plugin that includes DLL caching, to make your webpack builds as fast as HIGHLY optimized, and automatically based on your lockfile, e.g. `yarn.lock`
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/JimmyLv/webpack-autodll-plugin)
+Before | After |
+--------|-------|
+![img.png](images/before.png)|![img.png](images/after.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -135,10 +137,6 @@ yarn build # run it again to see the different
 rm -rf node_modules/.cache && rm -rf dev/dll && yarn build # clean all cache and run it again
 rm -rf dev/dll && yarn build # clean dll cache and run it gain
 ```
-
- before | after |
---------|-------|
-![img.png](images/before.png)|![img.png](images/after.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
