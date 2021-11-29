@@ -88,12 +88,18 @@ Before | After |
 
 ### Built With
 
-- [Webpack](https://webpack.js.org/)
-- [Sucrase](https://github.com/alangpierce/sucrase)
+- [Webpack](https://webpack.js.org/) for scaffold
+- [Sucrase](https://github.com/alangpierce/sucrase) for compiling
   - todo: [TypeScript](https://www.typescriptlang.org/)
-- [Jest](https://facebook.github.io/jest/)
-- [Prettier](https://prettier.io/)
+- [Jest](https://facebook.github.io/jest/) for testing
+- [Prettier](https://prettier.io/) for code format
+  - [lint-staged](https://github.com/okonet/lint-staged)
+  - [simple-git-hooks](https://github.com/toplenboren/simple-git-hooks)
 - [semantic-release](https://github.com/semantic-release/semantic-release)
+  - auto generate [CHANGELOG](./docs/CHANGELOG.md)
+  - auto publish to [NPM](https://www.npmjs.com/settings/parabol/packages)
+  - auto release in [GitHub](https://github.com/JimmyLv/webpack-autodll-plugin/releases)
+- [GitHub Action](https://github.com/JimmyLv/webpack-autodll-plugin/actions) as CI to build & test & publish 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -146,7 +152,7 @@ rm -rf dev/dll && yarn build # clean dll cache and run it gain
 
 ## Features & Roadmap
 
-See the [CHANGELOG](./docs/CHANGELOG.md) for a full list of features.
+Please see the [CHANGELOG](./docs/CHANGELOG.md) for a full list of features.
 
 - [x] the buildDll.js logic is moved into a separate package & turned into a webpack plugin
 - [x] the package is open sourced under the parabolinc github and under the `@parabol` in npm
@@ -160,7 +166,24 @@ See the [CHANGELOG](./docs/CHANGELOG.md) for a full list of features.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Getting Start
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### How to Develop
 
 1.Clone the repo
 
@@ -186,23 +209,6 @@ webpack
 ```shell
 yarn test
 ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
