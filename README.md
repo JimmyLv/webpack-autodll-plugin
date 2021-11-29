@@ -90,8 +90,10 @@ Before | After |
 
 - [Webpack](https://webpack.js.org/)
 - [Sucrase](https://github.com/alangpierce/sucrase)
+  - todo: [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://facebook.github.io/jest/)
 - [Prettier](https://prettier.io/)
+- [semantic-release](https://github.com/semantic-release/semantic-release)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -132,7 +134,7 @@ _For the real example, please check out the `examples/` folder_
 ```shell
 cd examples/simple
 yarn build
-yarn build # run it again to see the different
+yarn build # run it again to see the difference
 
 rm -rf node_modules/.cache && rm -rf dev/dll && yarn build # clean all cache and run it again
 rm -rf dev/dll && yarn build # clean dll cache and run it gain
@@ -142,7 +144,7 @@ rm -rf dev/dll && yarn build # clean dll cache and run it gain
 
 <!-- ROADMAP -->
 
-## Changelog & Roadmap
+## Features & Roadmap
 
 See the [CHANGELOG](./docs/CHANGELOG.md) for a full list of features.
 
