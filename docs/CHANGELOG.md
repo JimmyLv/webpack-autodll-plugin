@@ -1,3 +1,16 @@
+# [1.3.0](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.4...v1.3.0) (2021-11-29)
+
+
+### Features
+
+* add webpack cache for buildDll ([84d2ed9](https://github.com/JimmyLv/webpack-autodll-plugin/commit/84d2ed9876dbfb7e1a8db43e7cf35b583a245ce1))
+
+
+
+
+
+# [v1.3.0](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.4...v1.3.0) (2021-11-29)
+
 ## [1.2.4](https://github.com/JimmyLv/webpack-autodll-plugin/compare/v1.2.3...v1.2.4) (2021-11-23)
 
 
