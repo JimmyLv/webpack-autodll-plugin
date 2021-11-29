@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/JimmyLv/webpack-autodll-plugin">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="./images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">@parabol/webpack-autodll-plugin</h3>

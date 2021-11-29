@@ -18,6 +18,12 @@ class BundleController {
   dllReferencePlugin
   constructor(options) {
     this.webpackConfig = {
+      cache: {
+        type: 'filesystem',
+        buildDependencies: {
+          config: [__filename],
+        },
+      },
       entry: {
         vendors: options.vendors,
       },
@@ -42,12 +48,15 @@ class BundleController {
   }
 
   async webpackBuild() {
+    console.time('buildDll')
+
     return new Promise((resolve, reject) => {
       webpack(this.webpackConfig, (err, stats) => {
         if (err) {
           reject(err)
         } else {
           console.log(`📘 DLL created`)
+          console.timeEnd('buildDll')
 
           const assets = stats.toJson().assets.map((asset) => asset.name)
           resolve(assets)
