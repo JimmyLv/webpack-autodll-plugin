@@ -776,7 +776,7 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
-"@semantic-release/changelog@^5.0.1":
+"@semantic-release/changelog@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-5.0.1.tgz#50a84b63e5d391b7debfe021421589fa2bcdafe4"
   integrity sha512-unvqHo5jk4dvAf2nZ3aw4imrlwQ2I50eVVvq9D47Qc3R+keNqepx1vDYwkjF8guFXnOYaYcR28yrZWno1hFbiw==
@@ -804,7 +804,7 @@
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
   integrity sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==
 
-"@semantic-release/git@^9.0.0":
+"@semantic-release/git@9.0.1":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-9.0.1.tgz#7b5486578460084d8914c1aa4c4fff5087afa32a"
   integrity sha512-75P03s9v0xfrH9ffhDVWRIX0fgWBvJMmXhUU0rMTKYz47oMXU5O95M/ocgIKnVJlWZYoC+LpIe4Ye6ev8CrlUQ==
@@ -889,7 +889,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@sucrase/jest-plugin@^2.2.0":
+"@sucrase/jest-plugin@2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@sucrase/jest-plugin/-/jest-plugin-2.2.0.tgz#a176ae754a4e142fd50f9952dc6a8d161a1db951"
   integrity sha512-eBWmp771YXm0wIftlse4siG98J3HRnZBojhSrvPGYgj+R9Kbf1QeJGMr6iNC0e/0qlKkw01Ig3H8KjPVwUqiGQ==
@@ -1601,7 +1601,7 @@ binary-extensions@^2.0.0, binary-extensions@^2.2.0:
   resolved "https://registry.npmmirror.com/binary-extensions/download/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
   integrity sha1-dfUC7q+f/eQvyYgpZFvk6na9ni0=
 
-bluebird@^3.7.2:
+bluebird@3.7.2:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
@@ -4202,7 +4202,7 @@ jest-worker@^27.0.6, jest-worker@^27.3.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jest@^27.3.1:
+jest@27.3.1:
   version "27.3.1"
   resolved "https://registry.yarnpkg.com/jest/-/jest-27.3.1.tgz#b5bab64e8f56b6f7e275ba1836898b0d9f1e5c8a"
   integrity sha512-U2AX0AgQGd5EzMsiZpYt8HyZ+nSVIh5ujQ9CPp9EQZJMjXIiSZpJNweZl0swatKRoqHWgGKM3zaSwm4Zaz87ng==
@@ -4507,7 +4507,7 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^12.0.2:
+lint-staged@12.0.2:
   version "12.0.2"
   resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-12.0.2.tgz#b0f96f2a57898658a5b59e087aeff975dad03fc1"
   integrity sha512-tpCvACqc7bykziGJmXG0G8YG2RaCrWiDBwmrP9wU7i/3za9JMOvCECQmXjw/sO4ICC70ApVwyqixS1htQX9Haw==
@@ -4741,7 +4741,7 @@ memfs@^3.2.2:
   dependencies:
     fs-monkey "1.0.3"
 
-memory-fs@^0.5.0:
+memory-fs@0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/memory-fs/-/memory-fs-0.5.0.tgz#324c01288b88652966d161db77838720845a8e3c"
   integrity sha512-jA0rdU5KoQMC0e6ppoNRtpp6vjFq6+NY7r8hywnC7V+1Xj/MtHwGIbB1QaK/dunyjWteJzmkpd7ooeWg10T7GA==
@@ -5701,7 +5701,7 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prettier@^2.4.1:
+prettier@2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
   integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
@@ -6199,7 +6199,7 @@ selfsigned@^1.10.11:
   dependencies:
     node-forge "^0.10.0"
 
-semantic-release-gitmoji@^1.3.4:
+semantic-release-gitmoji@1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/semantic-release-gitmoji/-/semantic-release-gitmoji-1.4.2.tgz#f88d7f53fb30f700ef65ff7d46a0dcf050fbf56c"
   integrity sha512-J9+bdUXnewwzCJOJ5BcKLmK0Iqim2iJ+/KJhTAJovDHR67y64RKpIZNDhKicf90Fk572COvSumBWdy5aZ1WaBw==
@@ -6215,7 +6215,7 @@ semantic-release-gitmoji@^1.3.4:
     lodash.uniq "^4.5.0"
     node-emoji "^1.11.0"
 
-semantic-release@^17.4.2:
+semantic-release@17.4.7:
   version "17.4.7"
   resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-17.4.7.tgz#88e1dce7294cc43acc54c4e0a83f582264567206"
   integrity sha512-3Ghu8mKCJgCG3QzE5xphkYWM19lGE3XjFdOXQIKBM2PBpBvgFQ/lXv31oX0+fuN/UjNFO/dqhNs8ATLBhg6zBg==
@@ -6394,7 +6394,7 @@ signale@^1.2.1:
     figures "^2.0.0"
     pkg-conf "^2.1.0"
 
-simple-git-hooks@^2.7.0:
+simple-git-hooks@2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/simple-git-hooks/-/simple-git-hooks-2.7.0.tgz#121a5c3023663b8abcc5648c8bfe8619dc263705"
   integrity sha512-nQe6ASMO9zn5/htIrU37xEIHGr9E6wikXelLbOeTcfsX2O++DHaVug7RSQoq+kO7DvZTH37WA5gW49hN9HTDmQ==
@@ -6755,7 +6755,7 @@ strip-json-comments@~2.0.1:
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   integrity sha1-PFMZQukIwml8DsNEhYwobHygpgo=
 
-sucrase@^3.18.0, sucrase@^3.20.3:
+sucrase@3.20.3, sucrase@^3.18.0:
   version "3.20.3"
   resolved "https://registry.yarnpkg.com/sucrase/-/sucrase-3.20.3.tgz#424f1e75b77f955724b06060f1ae708f5f0935cf"
   integrity sha512-azqwq0/Bs6RzLAdb4dXxsCgMtAaD2hzmUr4UhSfsxO46JFPAwMnnb441B/qsudZiS6Ylea3JXZe3Q497lsgXzQ==
@@ -7289,7 +7289,7 @@ webpack-cli@^4.9.1:
     rechoir "^0.7.0"
     webpack-merge "^5.7.3"
 
-webpack-defaults@^4.0.0:
+webpack-defaults@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/webpack-defaults/-/webpack-defaults-4.0.0.tgz#5d84eddcf3afdc093ccab03b7201d129fb38f6dc"
   integrity sha512-CPaWiBId9Lz+OC/4fyqFl+MLKObS0qYBUq17no/N8VweVlkJc70ve1+XHo/xv3dhZPZRTon7HF8JLKQtz8c5xw==
