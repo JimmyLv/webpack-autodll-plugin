@@ -100,10 +100,10 @@ You can use this Webpack plugin that includes DLL caching, to make your webpack 
 ### Prerequisites
 
 - Node.js
-- NPM
+- NPM/Yarn
 
 ```sh
-npm install npm@latest -g
+yarn add @parabol/webpack-autodll-plugin 
 ```
 
 <!-- USAGE EXAMPLES -->
@@ -119,26 +119,40 @@ module.exports = {
   plugins: [
     new WebpackAutodllPlugin({
       vendors: ['react', 'react-dom', 'core-js'],
+      // lockfile: 'yarn.lock',
     }),
   ],
 }
 ```
 
-_For more examples, please refer to the [Documentation](https://github.com/ParabolInc/parabol/issues/4583)_
+_For the real example, please check out the `examples/` folder_
+
+```shell
+cd examples/simple
+yarn build
+yarn build # run it again to see the different
+
+rm -rf node_modules/.cache && rm -rf dev/dll && yarn build # clean all cache and run it again
+rm -rf dev/dll && yarn build # clean dll cache and run it gain
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 
-## Roadmap
+## Changelog & Roadmap
+
+See the [CHANGELOG](./docs/CHANGELOG.md) for a full list of features.
 
 - [x] the buildDll.js logic is moved into a separate package & turned into a webpack plugin
-- [x] the package is open sourced under the parabolinc github and under the parabol in npm
+- [x] the package is open sourced under the parabolinc github and under the `@parabol` in npm
 - [x] instead of referencing the built dll output, the dev config references the dll config & the plugin builds it if the hash changes
-- [x] see https://github.com/clinyong/dll-link-webpack-plugin for inspiration on the API
-- [ ] Suggested API: `({vendors: string[]} | {package: string, ignore?: string[]}) & {lockfile?: string}` but it's up to you!
-
-See the [open issues](https://github.com/JimmyLv/webpack-autodll-plugin/issues) for a full list of proposed features (and known issues).
+  - see https://github.com/clinyong/dll-link-webpack-plugin for inspiration on the API
+- [x] Suggested API: `({vendors: string[]} | {package: string, ignore?: string[]}) & {lockfile?: string}`
+  - [x] vendors
+  - [x] lockfile
+  - [ ] package
+  - [ ] ignore
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
