@@ -113,7 +113,8 @@ Before | After |
 - NPM/Yarn
 
 ```sh
-yarn add @parabol/webpack-autodll-plugin 
+yarn add @parabol/webpack-autodll-plugin -D
+# npm install @parabol/webpack-autodll-plugin -D
 ```
 
 <!-- USAGE EXAMPLES -->
@@ -130,6 +131,8 @@ module.exports = {
     new WebpackAutodllPlugin({
       vendors: ['react', 'react-dom', 'core-js'],
       // lockfile: 'yarn.lock',
+      // package: 'package.json',
+      // ignore: [],
     }),
   ],
 }
@@ -140,10 +143,10 @@ _For the real example, please check out the `examples/` folder_
 ```shell
 cd examples/simple
 yarn build
-yarn build # run it again to see the difference
+yarn build # <-- re-run it again to see the difference
 
-rm -rf node_modules/.cache && rm -rf dev/dll && yarn build # clean all cache and run it again
 rm -rf dev/dll && yarn build # clean dll cache and run it gain
+rm -rf node_modules/.cache && rm -rf dev/dll && yarn build # clean all cache and run it again
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -158,7 +161,7 @@ Please see the [CHANGELOG](./docs/CHANGELOG.md) for a full list of features.
 - [x] the package is open sourced under the parabolinc github and under the `@parabol` in npm
 - [x] instead of referencing the built dll output, the dev config references the dll config & the plugin builds it if the hash changes
   - see https://github.com/clinyong/dll-link-webpack-plugin for inspiration on the API
-- [x] Suggested API: `({vendors: string[]} | {package: string, ignore?: string[]}) & {lockfile?: string}`
+- [x] API configuration: `({vendors: string[]} | {package: string, ignore?: string[]}) & {lockfile?: string}`
   - [x] vendors
   - [x] lockfile
   - [ ] package
